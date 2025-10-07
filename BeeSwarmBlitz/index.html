@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="interface.css">
+	<title>Bee Swarm Blitz</title>
+	<link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico">
+</head>
+<body id="body" class="prevent-select" onload="saveHandler('load', 0)">
+	<div id="particles-js"></div>
+	<div id="resources_container">
+		<div><p>Honey</p><p id="resources_honey">0</p></div>
+		<div><p>Pollen</p><p id="resources_pollen">0 / 200</p></div>
+		<div><p>Tickets</p><p id="resources_tickets">0</p></div>
+	</div>
+	<div id="buffs_container"></div>
+	<div id="bear_container">
+		<!--head, chest-->
+		<img src="images/empty.png">
+		<div></div>
+		<!--left, right arms-->
+		<div></div>
+		<div></div>
+		<!--left, right ears-->
+		<div></div>
+		<div></div>
+		<p></p>
+		<button>?</button></div>
+	<div id="hive_container"><div></div></div>
+	<div id="field_container"><div></div><div><p></p><img src="images/empty.png"><div onclick="fieldHandler('pre')"></div><img src="images/empty.png"></div></div>
+	<div id="mob_container"><div></div><div></div></div>
+	<div id="shop_container"><div></div><div></div><div><div></div><div></div><div></div><div></div><div></div></div></div>
+	<div id="quest_container"><div><p></p></div><div><p></p></div><div><p></p></div><div><p></p></div></div>
+	<button style="position: absolute; top: 5%; left: 5%; visibility: hidden;" onclick="startRound()">start round</button>
+	<button style="position: absolute; top: 5%; left: 11%; visibility: hidden;" onclick="cardHandler('gen', ['bee', 'none', 'Precise'])">gen bee</button>
+	<button style="position: absolute; top: 5%; left: 16%; visibility: hidden;" onclick="cardHandler('draw', 5)">show hand</button>
+	<button id="turn_end_button" style="position: absolute; right: 4%; bottom: 4%;" onclick="roundHandler('end_turn')">End Turn</button>
+	<button id="settings_button" style="position: absolute; right: 4%; bottom: 4%; visibility: hidden;" onclick="settingHandler('open')">Options</button>
+	<div id="card_template" class="card" style="visibility: hidden;">
+		<span style="top: 10%; transform: translateY(-50%);"></span>
+		<img src="images/empty.png">
+		<span style="top: 47%;"></span>
+		<p>Beequip<br><span></span><br>Mutation<br><span></span></p>
+		<span style="top: 55%;"></span>
+	</div>
+	<div id="card_holder"></div>
+	<svg id="curves_svg">
+		<path/>
+	</svg>
+	<script src="particles.js"></script>
+	<script src="seedrandom.js"></script>
+	<script src="data.js"></script>
+	<script src="classes.js"></script>
+	<script src="file_paths.js"></script>
+	<script src="main2.js"></script>
+</body>
+</html>
