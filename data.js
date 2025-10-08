@@ -1,6 +1,3 @@
-/*
-yes, I read all this from the wiki and typed it all out. no, it was not fun.
-*/
 var game = {
     baseStats: {
         field: "sunflower"

@@ -1,8 +1,5 @@
 /* fun facts
 started june 15, 2025 originally as a clicker/idle game, then transitioned into deckbuilder
-inspires by bss (naturally), slay the spire, balatro
-currently 736 images, mostly from bss wiki and onett's roblox inventory
-biggest debugging issue took 16 console.logs to solve, damn animations
 */
 /*
 TODO LIST
