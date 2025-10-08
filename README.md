@@ -1,7 +1,7 @@
 # Bee Swarm Blitz
 A web-based deckbuilding roguelite game inspired by Bee Swarm Simulator, Balatro, and Slay the Spire. 
 
-**Link to project:** actual link here
+**Link to project:** [https://gibbles57.github.io/bee_swarm_blitz/](https://gibbles57.github.io/bee_swarm_blitz/)
 
 ## How It's Made:
 
